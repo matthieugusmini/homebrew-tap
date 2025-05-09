@@ -10,7 +10,7 @@ class Lolesport < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/matthieugusmini/lolesport/releases/download/v0.0.0-dev.1/lolesport_Darwin_x86_64.tar.gz"
-      sha256 "f2177b33c638f52df1b38f6f9a611e87710d83345b8eefd435cf6ab779c6e3e7"
+      sha256 "8528c6d4482ea644dbade609f562d7ac7f33e0e30fe871e6457911d624f3b5cc"
 
       def install
         bin.install "lolesport"
@@ -18,7 +18,7 @@ class Lolesport < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/matthieugusmini/lolesport/releases/download/v0.0.0-dev.1/lolesport_Darwin_arm64.tar.gz"
-      sha256 "0bd67d3aced870643b3a96436483814908d40793d4ba778f9df2c4e3ede440f7"
+      sha256 "d7621a08c1e0a83e3c97b021b2be8b4a7ad48288037445f82cb94256a05604e7"
 
       def install
         bin.install "lolesport"
@@ -29,14 +29,14 @@ class Lolesport < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/matthieugusmini/lolesport/releases/download/v0.0.0-dev.1/lolesport_Linux_x86_64.tar.gz"
-      sha256 "46f486d1933d0d511a163a5a4b2d74e38799b6693f98a4360b7895ac1d237338"
+      sha256 "5bb61498c7f01fbd261e9c9b78e21e2d6a1f16d985eb73efceaa4d03eaa50c38"
       def install
         bin.install "lolesport"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/matthieugusmini/lolesport/releases/download/v0.0.0-dev.1/lolesport_Linux_arm64.tar.gz"
-      sha256 "542b2715cf7eac217f5e805ab51affbec0c5ce955e56f19e583840b49876fe7b"
+      sha256 "495a820a9824ea2aa33d6051f279f8b3f223589566e99734f342a29855469115"
       def install
         bin.install "lolesport"
       end
