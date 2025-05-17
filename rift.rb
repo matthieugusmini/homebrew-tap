@@ -5,21 +5,21 @@
 class Rift < Formula
   desc "LoL Esports in your terminal"
   homepage ""
-  version "0.0.0-dev.4"
+  version "0.1.0"
   license "mit"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matthieugusmini/rift/releases/download/v0.0.0-dev.4/rift_Darwin_x86_64.tar.gz"
-      sha256 "dba65b8d23e114a639feca3f41d3cded8c5471a53584da23a15e55a559a15487"
+      url "https://github.com/matthieugusmini/rift/releases/download/v0.1.0/rift_Darwin_x86_64.tar.gz"
+      sha256 "43e8f2d66436cd88b9163575e89c8245e3f488c8d7ca32fb73c2aac935cad664"
 
       def install
         bin.install "rift"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/matthieugusmini/rift/releases/download/v0.0.0-dev.4/rift_Darwin_arm64.tar.gz"
-      sha256 "fac02ec9063cbb85145a0b4db1b6c28506e0c74d528cde33d4acda23f4ce190d"
+      url "https://github.com/matthieugusmini/rift/releases/download/v0.1.0/rift_Darwin_arm64.tar.gz"
+      sha256 "bd084ed68466d5947b5f74e1eafa2827d39aadb74ba22663ae0166a631c7ab3a"
 
       def install
         bin.install "rift"
@@ -29,15 +29,15 @@ class Rift < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/matthieugusmini/rift/releases/download/v0.0.0-dev.4/rift_Linux_x86_64.tar.gz"
-      sha256 "c68fd518d5583189fb93ff6d77aaf604c932ef850e6b394a3dcb9f374c7a2b6d"
+      url "https://github.com/matthieugusmini/rift/releases/download/v0.1.0/rift_Linux_x86_64.tar.gz"
+      sha256 "57fa1daf582fd5ccc019cf95f4165618bf913768f9807113204ba3727488a1e5"
       def install
         bin.install "rift"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/matthieugusmini/rift/releases/download/v0.0.0-dev.4/rift_Linux_arm64.tar.gz"
-      sha256 "8d4fa2afce239c3351e5fceeeee91d516e0a031b0e54b315fc34b42b234fb17b"
+      url "https://github.com/matthieugusmini/rift/releases/download/v0.1.0/rift_Linux_arm64.tar.gz"
+      sha256 "20bf2f3b6d6ab3bee4bd7454612b292e641383b66643d4671e57316ac4a74f15"
       def install
         bin.install "rift"
       end
