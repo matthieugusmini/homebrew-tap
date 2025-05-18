@@ -11,7 +11,7 @@ class Rift < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/matthieugusmini/rift/releases/download/v0.1.0/rift_Darwin_x86_64.tar.gz"
-      sha256 "d90cac8c5f23a35974ea3432de72251fb513ccaad3514b2f2b8cb5a2d4d85b23"
+      sha256 "5963e451f8f1293b752580831b3f3c1fc68903613cc03ebaeb2197f81e1c9392"
 
       def install
         bin.install "rift"
@@ -19,7 +19,7 @@ class Rift < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/matthieugusmini/rift/releases/download/v0.1.0/rift_Darwin_arm64.tar.gz"
-      sha256 "7086c574d76e54840cdc47be214155053c82bdc3fbd1e9d6fc478e488ebe8406"
+      sha256 "9196e41597ca4f7ce2df4f75806ca11671bba6b4b6efa6d88dcf9b4a38fe44a6"
 
       def install
         bin.install "rift"
@@ -30,14 +30,14 @@ class Rift < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/matthieugusmini/rift/releases/download/v0.1.0/rift_Linux_x86_64.tar.gz"
-      sha256 "ddcc40f0e05461acbe2d1535c44d2010a8db59cd38520beb563a11e081d8262c"
+      sha256 "1b54bcdfb512e47163607261f629f6b5853e77c73914c4c32cbdabc6b69f7590"
       def install
         bin.install "rift"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/matthieugusmini/rift/releases/download/v0.1.0/rift_Linux_arm64.tar.gz"
-      sha256 "6f120ab5c994bc816a476d62b0e42ecf1fb8b1e5eae38a5acdaf181313d71df2"
+      sha256 "5584079cb9b9861dd32597c8c3951cffdb950f87ace45b86c9d7e27daebd3a1c"
       def install
         bin.install "rift"
       end
